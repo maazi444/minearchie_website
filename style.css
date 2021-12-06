@@ -1,0 +1,242 @@
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			*, *:before, *:after {
+				box-sizing: inherit;
+			}
+			
+			/*Header*/
+			.header {
+				padding:30px;
+				text-align:center;
+				background-color:#1BD28C;
+				color:white;
+			}
+			
+			.header h1{
+				font-size:60px;
+			}
+			
+			.header p{
+				font-size:16px;
+			}
+			
+			/*Navigation Bar*/
+			.navbar{
+				overflow:hidden;
+				background-color:#333;
+			}
+			
+			/*List of Tabs*/
+			.navbar a{
+				float:left;
+				padding: 14px 20px;
+				color:white;
+				display:block;
+				text-decoration:none;
+				text-align:center;
+			}
+			
+			/*Selected Tab*/
+			.navbar .selected{
+				background-color:#1BD28C;
+				color:black;
+			}
+			
+			.navbar a.rightside{
+				float:right;
+			}
+			
+			.navbar a:hover{
+				background-color:#f1f1f1;
+				color:black;
+				transition:0.6s
+			}
+			
+			/*Row Containing Side Column and Main Column*/
+			.row{
+				display:flex;
+				flex-wrap:wrap;
+			}
+			
+			/*Side Column*/
+			.side{
+				flex:20%;
+				background-color:#7C817F;
+				padding:20px;
+			}
+			
+			/*List of Contents*/
+			.side a{
+				font-family:Arial;
+				text-decoration:none;
+				font-size:23px;
+				display:block;
+				margin:3px;
+			}
+			
+			.side a:hover{
+				background-color:#ddd;
+				color:black;
+				transition:0.6s
+			}
+			
+			/*Main Column*/
+			.main{
+				flex:80%;
+				padding:20px;
+				background-color:white;
+			}
+			
+			.container{
+				width:350px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+			}
+
+			/*Home Tab Posts*/
+			
+			/*Post Image*/
+			.postimg{
+				float:left;
+				width:300px;
+				margin-top: 10px;
+				margin-left: 20px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); 
+			}
+
+			/*Whole Post*/
+			.post1{
+				background-color: #e4e1e1;
+				border-radius: 10px;
+				height: 190px;
+				margin-left: 15px;
+				width: 990px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+			}
+
+			/*Post Text*/
+			.post-text{
+				margin-left: 330px;
+				font-size: 25px;
+			}
+
+			/*Responsive Screen when screen Resolution is 700px*/
+			@media screen and (max-width: 700px){
+				.row{
+					flex-direction:column;
+				}
+			}
+			
+			/*Responsive Scteen when screen Resolution is 400px*/
+			@media screen and (max-width: 400px){
+				.navbar a{
+					float:none;
+					width:100%;
+				}
+			}
+			
+			/*Footer*/
+			.footer {
+				padding:20px;
+				background-color:#ddd;
+				text-align:center;
+			}
+			
+			.footer p{
+				font-size:15px;
+			}
+			form.example input[type=text] {
+				padding: 10px;
+				font-size: 17px;
+				border: 1px solid grey;
+				float: left;
+				width: 15%;
+				background: #f1f1f1;
+				margin-left: 60px;
+				margin-top:1px;
+			}
+
+				/* Style the submit button */
+				form.example button {
+				  float: left;
+				  width: 5%;
+				  padding: 10px;
+				  background: #2196F3;
+				  color: white;
+				  font-size: 17px;
+				  border: 1px solid grey;
+				  border-left: none; /* Prevent double borders */
+				  cursor: pointer;
+				  margin-top: 1px;
+			}
+
+				form.example button:hover {
+				  background: #0568b9;
+				  transition: 0.3s
+				}
+
+				/* Clear floats */
+				form.example::after {
+				  content: "";
+				  clear: both;
+				  display: table;
+				}
+				
+				/*Pagination*/
+			.pagination{
+				margin-left: 600px;
+				margin-bottom: 10px;
+			}
+
+				/* Pagination links */
+				.pagination a {
+					color: black;
+					float: left;
+					padding: 8px 16px;
+					text-decoration: none;
+					transition: background-color .3s;
+				}
+				
+				/* Style the active/current link */
+				.pagination a.active {
+					background-color: dodgerblue;
+					color: white;
+				}
+				
+				/* Add a grey background color on mouse-over */
+				.pagination a:hover:not(.active) {background-color: #ddd;}
+
+				/*Post in Main  Panel in Game Tab*/
+				.wholegamepost{
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+					width: 32.5%;
+					border-radius: 8px;
+					background-color: #e4d8d8;
+					margin-right: 8px;
+					margin-bottom: 50px;
+					float: left;
+				}
+
+				.gamecard{
+					padding-top: 1px;
+					padding-left: 10px;
+					border-radius: 12px;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+					background-color: #857f83;
+					width: 100%
+					
+				}
+
+				.gametext{
+					text-align: center;
+					font-size: 18px;
+					padding-bottom: 2px;
+				}
+				.wholegamepost a{
+					text-decoration: none;
+				}
+				.wholegamepost .gamecard img{
+					width: 95%;
+				}
+							
